@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .lock-container{
+            /* border: solid 1px red; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background:rgb(185, 195, 212) ;
+            gap: 60px;
+            
+        }
+        .lock-image{
+            /* width: 650px; */
+            height: 300px;
+            width: auto;
+        }
+        #info-text-1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .info-text{
+            width: auto;
+            align-items: center;
+            padding: 10px;
+            /* border: solid 1px red; */
+        }
+        .info-text h1{
+            font-size: 34px;
+            font-weight: 600;
+        }
+        .info-text p{
+            width:640px;
+        }
+        
+        @media (max-width:900px) {
+            
+            .lock-container{
+            /* margin:0%;
+            padding:0%; */
+            /* border: solid 1px red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background:rgb(185, 195, 212) ;
+            gap:0px;
+            /* width:100vw; */
+            /* height:80px; */
+            
+        }
+        .lock-image{
+            height: 50px;
+            width:60px;
+            margin:0%;
+            padding:0%;
+        }
+        #info-text-1{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .info-text{
+            /* border: solid 1px rgb(0, 255, 0); */
+            width:auto;
+            align-items: center;
+            margin:0%;
+            padding:0%;
+        }
+        .info-text h1{
+            font-size: 5px;
+            font-weight: 600;
+            width: 65px;
+            padding-left: 0%;
+        }
+        .info-text p{
+            width:50px;
+            height: 20px;
+            font-size:2.5px;
+            /* align-items: center; */
+            font-weight: 400;
+        }
+        }
+        @media (max-width:480px) {
+            
+            .lock-container{
+            /* margin:0%;
+            padding:0%; */
+            /* border: solid 1px red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background:rgb(185, 195, 212) ;
+             gap:0px;
+            /* width:39px; */
+            /* height:80px; */
+            
+        }
+        .lock-image{
+            height: 30px;
+            width:30px;
+            margin:0%;
+            padding:0%;
+        }
+        #info-text-1{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .info-text{
+            /* border: solid 1px rgb(0, 255, 0); */
+            width:auto;
+            align-items: center;
+            margin:0%;
+            padding:0%;
+        }
+        .info-text h1{
+            font-size: 3px;
+            font-weight: 600;
+            width: 30px;
+            align-items: center;
+        }
+        .info-text p{
+            width:30px;
+            height: 20px;
+            font-size:2px;
+            align-items: center;
+        }
+        
+        }
+        .footer_container{
+            /* border: solid 1px rgb(255, 8, 0); */
+            display:flex ;
+            flex-wrap: wrap;
+            flex-direction:row;
+            /* gap: 10px; */
+            justify-content: space-between;
+            margin: 20px;
+            padding-right: 80px;
+            padding-left: 30px;
+            height: 250px;
+        }
+        .footer_child{
+            /* border: solid 1px rgb(8, 252, 12); */
+            padding: 20px;
+            color: rgb(36, 36, 101);
+            font-weight: 500;
+        }
+        #footer_child-2{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        /* .footer_child p{
+            width: 160px;
+        } */
+        #footer_child-3{
+            display: flex;
+            flex-direction:column;
+            gap: 20px;
+        }
+        .icon{
+            display: flex;
+            flex-direction: row;
+            gap:10px;
+            font-size:19px;
+        }
+        #footer_child-1{
+            display: flex;
+            flex-direction:column;
+            gap: 20px;
+        }
+        @media (max-width:900px) {
+            .footer_container{
+            /* border: solid 1px rgb(0, 13, 255); */
+            display:flex ;
+            flex-wrap: wrap;
+            flex-direction:row;
+            gap: 3px;
+            justify-content: space-around;
+            margin: 0px;
+            margin-top: 5px;
+            padding-right: 0px;
+            padding-left: 0px;
+            height: auto;
+        }
+        .text-1{
+            font-size: 2px;
+        }
+        .footer_child{
+            /* border: solid 1px rgb(8, 252, 12); */
+            padding:0px 6px;
+            color: rgb(36, 36, 101);
+            font-weight: 500;
+        }
+        #footer_child-2{
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+        .icon{
+            display: flex;
+            flex-direction: row;
+            gap:3px;
+            font-size: 2px;
+        }
+        #footer_child-3{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            
+        }
+        #footer_child-1{
+            display: flex;
+            flex-direction:column;
+            gap: 2px;
+        }
+        }
+
+        @media (max-width:480px) {
+            .footer_container{
+            /* border: solid 1px rgb(0, 13, 255); */
+            display:flex ;
+            flex-wrap: wrap;
+            flex-direction:row;
+            gap: 3px;
+            justify-content: space-around;
+            margin: 0px;
+            margin-top: 3px;
+            padding-right: 0px;
+            padding-left: 0px;
+            height: auto;
+        }
+        .text-1{
+            font-size: 2px;
+        }
+        .footer_child{
+            /* border: solid 1px rgb(8, 252, 12); */
+            padding:0px 0px;
+            color: rgb(36, 36, 101);
+            font-weight: 500;
+        }
+        #footer_child-2{
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+        .icon{
+            display: flex;
+            flex-direction: row;
+            gap:1.5px;
+            font-size: 2px;
+        }
+        #footer_child-3{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            
+        }
+        #footer_child-1{
+            display: flex;
+            flex-direction:column;
+            gap: 0px;
+        }
+        }
+
+    </style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    <section class="lock-container">
+        <div class="info-text" id="info-text-1">
+            <div><h1>Who are we and What we do</h1></div>
+            <div><p>Longboat Rond (LbR) is a UK register subsidiary of longboat Group Ltd. As part of the wider group. LbR also has access to the Norwegian registered Longboat Solutions(Lbs) global supply and longistics team</p></div>
+        </div>
+        <div class="info-text">
+            <img src="image/lock.jpg" alt="lock" class="lock-image">
+        </div>
+       
+    </section>
+    <section class="footer_container">
+        <div class="footer_child" id="footer_child-1">
+            <div>
+                <h1 class="text-1">LONGBOATROND</h1>
+            </div>
+            <div>
+                <div><p class="text-1">61 Bridge Street,Kington,</p></div>
+                <div><p class="text-1">United Kingdom,HRA 3DJ</p></div>
+            </div>
+              
+        </div>
+        <div class="footer_child" id="footer_child-2">
+            <div><h2 class="text-1">Join Our Team</h2></div>
+            <div class="text-1"><i class="fa-solid fa-envelope"></i> recruitment@longboat-round.com</div>
+            <div class="text-1">Privacy policy</div>
+            <div class="text-1">Cookies</div>
+
+        </div>
+        <div class="footer_child" id="footer_child-3">
+            <div>
+                <h2 class="text-1">Contect us</h2>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                
+            </div>
+            <div class="text-1">
+                <i class="fa-solid fa-phone"></i>   333-333-333
+            </div>
+            <div class="text-1">
+                <i class="fa-solid fa-envelope"></i>  info@longboat-round.com
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
